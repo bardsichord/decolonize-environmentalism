@@ -1,0 +1,123 @@
+@font-face {
+	font-family: 'myFont';
+	src: url('Fonts/Header.otf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'myFont';
+	src: url('Fonts/Paragraph.ttf') format('truetype');
+	font-weight: thin;
+	font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: myFont;
+  font-size: 18px;
+}
+#bgcolor {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: #000000;
+  transition: background 2s
+}
+.page {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+#header {
+  display: block;
+  float: left;
+  width: 60px;
+  height: 100vh;
+  margin: 0 10px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.1);
+}
+#header:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transition: background 1s;
+  cursor: pointer;
+}
+#header-text {
+  position:fixed;
+  display: block;
+  transform: rotate(-90deg);
+  transform-origin: top right;
+  font-size: 1.4em;
+  left: -640px;
+  top: 10px;
+  z-index: -1;
+  text-align: right;
+  color: #EAD590;
+  text-transform: uppercase;
+}
+#canvas-holder {   
+  margin: 0 10px;
+  display: inline;
+  float: left;
+}
+#text-holder { 
+  display: inline-block;
+  float: left;
+  margin: 0 10px;
+  width: 450px;
+  height: 100vh;
+  padding: 0.5em 2em;
+  text-transform: none;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+#sidebar-title {
+  display: none;
+  font-size: 2em;
+}
+#sidebar-text {
+  display: none;
+  font-size: 1.2em;
+}
+#sidebar-ref {
+  display: none;
+  font-size: 1.2em;
+}
+#sidebar-url {
+  display: none;
+  font-size: 1.2em;
+}
+/* @media screen and (max-width: 1040px) {
+  .page {
+    width: 600px;
+    height: 100vw
+  }
+  #header {
+    position: static;
+    width: 600px;
+  }
+  #canvas-holder, #text-holder {   
+    position: static;
+    width: 600px;
+    margin: 20px auto 0;
+  }
+} */
+h1 {
+  font-weight: bold;
+  text-align: left;
+}
+p, a {
+  font-weight: thin;
+  text-align: left;
+}
+a {
+  color: #EAD590
+}
+a:hover {
+  color: #CFE2F3
+}
